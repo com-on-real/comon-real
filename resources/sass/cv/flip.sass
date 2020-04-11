@@ -1,0 +1,33 @@
+#page, #page2
+    position: absolute
+    // FIXME Pourquoi y'a t'il besoin de ce right ??
+    right: 21px
+    backface-visibility: hidden
+    transition: transform cubic-bezier(0, 0, 0.20, 1.39) $duration
+
+#page2
+    transform: rotateY(180deg)
+    
+            
+.flip-card
+    perspective: 1500px
+    background-color: transparent
+
+    
+.flip-card-inner
+    position: relative
+    width: 100%
+    height: 100%
+    transition: transform 0.8s
+    transform-style: preserve-3d
+
+.reversCard
+    transform: rotateY(180deg)
+
+$distance: 25vw
+.Right
+    transform: translateX($distance)
+.Left
+    transform: translateX($distance * -1)
+
+

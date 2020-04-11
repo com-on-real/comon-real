@@ -1,0 +1,108 @@
+// ANCHOR HEADER
+#header
+    display: grid,
+    grid-template-columns: 2fr 1fr
+    grid-template-rows: 7cm
+
+    background-color: $bleue
+    border-bottom: solid 10pt $red
+    #intro
+        grid-column: 1
+        padding: 20pt
+        hr 
+            margin-top: 10px
+            background-color: #FFF
+            width: 30%
+        h1 
+            font-size: 29pt
+        h2
+            padding-top: 5pt
+    #profile
+        grid-column: 2
+    hr 
+        margin: 0
+        display: block
+        height: 5pt
+        border: none
+
+.triangle
+    position: relative
+
+// ANCHOR SECTION
+#content
+    display: grid,
+    grid-template-columns: 2fr 1fr 5fr
+    grid-template-rows: 9cm 9cm
+
+    #competence
+        grid-row: 1 / 3
+        grid-column: 1
+        min-height: 400px
+        background-color: #1e4658
+        text-align: center
+        padding: 10px
+        .triangle
+            display: inline-block
+            border-top: 40px solid $bleue
+            border-right: 23px solid transparent
+            border-left: 22px solid transparent
+            top: 630px
+
+    .triangle
+        border-top: 22px solid transparent
+        border-bottom: 23px solid transparent
+        border-left: 40px solid $bleue
+        bottom: 43px
+
+    #date
+        grid-row: 1 / 3
+        grid-column: 2
+        background-color: #be5446
+        min-height: 400px
+
+    h2, p
+        color: #000
+
+    h1
+        background-color: rgba($bleue, 0.5)
+        margin-top: 10px
+
+
+    #experience, #formation
+        h1
+            cursor: pointer
+            padding: 10px 50px 10px
+
+// ANCHOR SECTION
+#footer
+    postion: relative
+    top: 100px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 2cm 2cm
+    border: 10pt solid #be5446
+    color: #be5446
+
+    p
+        margin: 0px 15px 0px 15px
+    
+    h1
+        padding: 10px
+        text-align: left
+        grid-column: 1/3
+
+    #link
+        grid-column: 1
+        text-align: left
+
+    #contact
+        grid-column: 2
+        text-align: center
+
+    #adresse
+        grid-column: 3
+        text-align: right
+
+    h1 
+        color: $bleue
+        margin: 10px

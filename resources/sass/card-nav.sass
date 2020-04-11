@@ -1,0 +1,53 @@
+
+$services: ("service": #c27878, "plan": #d3b155, "equipe": #5e93be)
+
+#card-nav
+	display: flex
+	flex: 1
+
+	flex-wrap: wrap
+	justify-content: space-evenly
+	row-gap: 500px
+
+	div
+		position: relative
+		text-align: center
+		color: #FFF
+
+		h3
+			padding-top: 25% 
+			font-size: 2em
+		hr
+			width: 75%
+			color: #FFF
+
+
+		&:hover .overlay
+			opacity: 0.8
+
+
+
+	.image
+		opacity: 1
+		display: block
+		width: 100%
+
+		@include rwd('1000')
+			width: 35vw
+		
+		height: auto
+		transition: .5s ease
+		backface-visibility: hidden
+
+	.overlay
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		height: 100%
+		width: 100%
+		opacity: 0
+		transition: .5s ease
+		background-color: #008CBA
+

@@ -1,0 +1,54 @@
+header
+	display: table
+	table-layout: auto
+	width: 100%
+	height: 80vh
+
+	.header
+		h1
+			font-size: 5em
+		h2
+			font-size: 2em
+		vertical-align: middle
+		display: table-cell
+
+	background-image: linear-gradient(rgba(3, 152, 252, 0.2), rgba(3, 152, 252, 1)), url("img/header.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position-x: center
+	text-align: center
+	color: $paper
+	i
+		font-size: 2em
+		padding: 25px 10px
+		&:hover
+			opacity: 50%
+
+.fixed
+	left: 50%
+	transform: translateX(-50%)
+	top: 50px
+	position: fixed
+
+.navtop
+	background-color: rgba(3, 152, 252, 1)
+	left: 30%
+	transform: translateX(-30%)
+
+.haut
+	position: relative
+	bottom: $logo-size/1.4
+
+// #content
+// 	padding: 0px
+// 	@extend .haut
+
+// #profile
+// 	@extend .haut
+// 	text-align: center
+
+.img-profile
+	height: $logo-size
+	display: block
+	margin-left: auto
+	margin-right: auto
